@@ -14,6 +14,12 @@
 		223EF0982A73268B00727126 /* APIHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0972A73268B00727126 /* APIHost.swift */; };
 		223EF09A2A7327B400727126 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0992A7327B400727126 /* APIProvider.swift */; };
 		223EF09C2A7327D400727126 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF09B2A7327D400727126 /* APITarget.swift */; };
+		223EF0A12A732D6400727126 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223EF0A02A732D6400727126 /* LaunchScreen.storyboard */; };
+		223EF0A42A732F9D00727126 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0A32A732F9D00727126 /* SplashScreenView.swift */; };
+		223EF0A72A732FFE00727126 /* ColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0A62A732FFE00727126 /* ColorType.swift */; };
+		223EF0AA2A73308100727126 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0A92A73308100727126 /* ExtensionColor.swift */; };
+		223EF0AC2A7330D000727126 /* AssetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0AB2A7330D000727126 /* AssetType.swift */; };
+		223EF0AE2A73311100727126 /* ExtensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0AD2A73311100727126 /* ExtensionImage.swift */; };
 		22B165B12A7322AB001925E3 /* WellCSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165B02A7322AB001925E3 /* WellCSTVApp.swift */; };
 		22B165B32A7322AB001925E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165B22A7322AB001925E3 /* ContentView.swift */; };
 		22B165B52A7322AC001925E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B165B42A7322AC001925E3 /* Assets.xcassets */; };
@@ -46,6 +52,12 @@
 		223EF0972A73268B00727126 /* APIHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHost.swift; sourceTree = "<group>"; };
 		223EF0992A7327B400727126 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		223EF09B2A7327D400727126 /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
+		223EF0A02A732D6400727126 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		223EF0A32A732F9D00727126 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		223EF0A62A732FFE00727126 /* ColorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
+		223EF0A92A73308100727126 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
+		223EF0AB2A7330D000727126 /* AssetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetType.swift; sourceTree = "<group>"; };
+		223EF0AD2A73311100727126 /* ExtensionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImage.swift; sourceTree = "<group>"; };
 		22B165AD2A7322AB001925E3 /* WellCSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellCSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B165B02A7322AB001925E3 /* WellCSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCSTVApp.swift; sourceTree = "<group>"; };
 		22B165B22A7322AB001925E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +108,8 @@
 		220A953D2A7323E200B5A37A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				223EF0A82A73306D00727126 /* Extensions */,
+				223EF0A52A732FF500727126 /* Type */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -103,6 +117,7 @@
 		220A953E2A7323E800B5A37A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				223EF0A22A732F8600727126 /* SplashScreen */,
 				22B165B22A7322AB001925E3 /* ContentView.swift */,
 			);
 			path = Features;
@@ -112,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				22B165B02A7322AB001925E3 /* WellCSTVApp.swift */,
+				223EF0A02A732D6400727126 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -164,6 +180,32 @@
 			children = (
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		223EF0A22A732F8600727126 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0A32A732F9D00727126 /* SplashScreenView.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		223EF0A52A732FF500727126 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0A62A732FFE00727126 /* ColorType.swift */,
+				223EF0AB2A7330D000727126 /* AssetType.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		223EF0A82A73306D00727126 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0A92A73308100727126 /* ExtensionColor.swift */,
+				223EF0AD2A73311100727126 /* ExtensionImage.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		22B165A42A7322AB001925E3 = {
@@ -330,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				223EF08B2A73243B00727126 /* Preview Assets.xcassets in Resources */,
+				223EF0A12A732D6400727126 /* LaunchScreen.storyboard in Resources */,
 				223EF0902A73250600727126 /* Localizable.strings in Resources */,
 				22B165B52A7322AC001925E3 /* Assets.xcassets in Resources */,
 			);
@@ -357,10 +400,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				223EF0982A73268B00727126 /* APIHost.swift in Sources */,
+				223EF0A72A732FFE00727126 /* ColorType.swift in Sources */,
+				223EF0AC2A7330D000727126 /* AssetType.swift in Sources */,
+				223EF0AE2A73311100727126 /* ExtensionImage.swift in Sources */,
 				223EF09A2A7327B400727126 /* APIProvider.swift in Sources */,
+				223EF0AA2A73308100727126 /* ExtensionColor.swift in Sources */,
 				22B165B32A7322AB001925E3 /* ContentView.swift in Sources */,
 				223EF09C2A7327D400727126 /* APITarget.swift in Sources */,
 				22B165B12A7322AB001925E3 /* WellCSTVApp.swift in Sources */,
+				223EF0A42A732F9D00727126 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +586,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -572,6 +621,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
