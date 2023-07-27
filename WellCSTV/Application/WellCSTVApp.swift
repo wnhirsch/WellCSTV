@@ -11,7 +11,9 @@ import SwiftUI
 struct WellCSTVApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                SplashScreenView()
+            }
         }
     }
 }
