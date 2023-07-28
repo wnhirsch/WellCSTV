@@ -11,7 +11,7 @@ import Foundation
 @MainActor
 class MatchDetailsViewModel: ObservableObject {
     
-    private let worker = MatchWorker()
+    private let worker: MatchWorker
     
     // MARK: View Attributes
     @Published var isLoading: Bool = false
@@ -60,8 +60,9 @@ class MatchDetailsViewModel: ObservableObject {
     }
     
     // MARK: Init
-    init(match: MatchModel) {
+    init(match: MatchModel, worker: MatchWorker = .init()) {
         self.match = match
+        self.worker = worker
     }
     
     // MARK: Methods

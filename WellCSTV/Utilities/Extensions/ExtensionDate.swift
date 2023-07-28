@@ -14,13 +14,34 @@ extension Date {
         Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second, .weekOfYear], from: self)
     }
     var year: Int {
-        components.year ?? .zero
+        get {
+            components.year ?? .zero
+        }
+        set(year) {
+            var newComponents = components
+            newComponents.year = year
+            self = Calendar.current.date(from: newComponents) ?? self
+        }
     }
     var month: Int {
-        components.month ?? .zero
+        get {
+            components.month ?? .zero
+        }
+        set(month) {
+            var newComponents = components
+            newComponents.month = month
+            self = Calendar.current.date(from: newComponents) ?? self
+        }
     }
     var day: Int {
-        components.day ?? .zero
+        get {
+            components.day ?? .zero
+        }
+        set(day) {
+            var newComponents = components
+            newComponents.day = day
+            self = Calendar.current.date(from: newComponents) ?? self
+        }
     }
     var hour: Int {
         get {

@@ -16,5 +16,7 @@ enum APIHost {
     // It's not safe to put it hard coded, but for test purposes it's easier being right here
     static var accessToken: String = "Cm61BGQzysAEp-8LfsNGuISCKscvZXBieDoisJ2UCdDLQ3cDpd0"
     
-    static var itemsPerPage: Int = 10
+    static var defaultPageSize: Int = 10
+    
+    static var maxPageSize: Int = 100
 }
