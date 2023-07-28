@@ -1,7 +1,12 @@
-/* 
-  Localizable.strings
-  WellCSTV
+// MARK: - Match List
 
-  Created by Wellington Nascente Hirsch on 27/07/23.
-  
-*/
+"match.list.title" = "Partidas";
+"match.list.versus" = "VS";
+"match.list.running" = "AGORA";
+"match.list.date.today" = "'Hoje', HH:mm";
+"match.list.date.thisWeek" = "E, HH:mm";
+"match.list.date.thisYear" = "dd.MM HH:mm";
+"match.list.date.default" = "dd.MM.yyyy HH:mm";
+"match.list.team.first" = "Time 1";
+"match.list.team.second" = "Time 2";
+"match.list.league.placeholder" = "Liga + série";

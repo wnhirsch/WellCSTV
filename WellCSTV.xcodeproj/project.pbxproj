@@ -20,8 +20,26 @@
 		223EF0AA2A73308100727126 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0A92A73308100727126 /* ExtensionColor.swift */; };
 		223EF0AC2A7330D000727126 /* AssetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0AB2A7330D000727126 /* AssetType.swift */; };
 		223EF0AE2A73311100727126 /* ExtensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0AD2A73311100727126 /* ExtensionImage.swift */; };
+		223EF0B22A7337EF00727126 /* MatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0B12A7337EF00727126 /* MatchListView.swift */; };
+		223EF0B42A7337FA00727126 /* MatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0B32A7337FA00727126 /* MatchListViewModel.swift */; };
+		223EF0BC2A733B2D00727126 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 223EF0B62A733B2D00727126 /* Roboto-Medium.ttf */; };
+		223EF0BD2A733B2D00727126 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 223EF0B72A733B2D00727126 /* Roboto-Light.ttf */; };
+		223EF0BE2A733B2D00727126 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 223EF0B82A733B2D00727126 /* Roboto-Regular.ttf */; };
+		223EF0BF2A733B2D00727126 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 223EF0B92A733B2D00727126 /* Roboto-Bold.ttf */; };
+		223EF0C02A733B2D00727126 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 223EF0BA2A733B2D00727126 /* Roboto-Thin.ttf */; };
+		223EF0C12A733B2D00727126 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 223EF0BB2A733B2D00727126 /* Roboto-Black.ttf */; };
+		223EF0C42A733B6300727126 /* TextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0C32A733B6300727126 /* TextModifier.swift */; };
+		223EF0C62A733BDD00727126 /* TextType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0C52A733BDD00727126 /* TextType.swift */; };
+		223EF0C82A733DFD00727126 /* ExtensionFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0C72A733DFD00727126 /* ExtensionFont.swift */; };
+		223EF0CA2A733F6600727126 /* SpaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0C92A733F6600727126 /* SpaceType.swift */; };
+		223EF0CD2A73567800727126 /* ExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0CC2A73567800727126 /* ExtensionView.swift */; };
+		223EF0D02A735C5C00727126 /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0CF2A735C5C00727126 /* MatchModel.swift */; };
+		223EF0D22A735F0800727126 /* MatchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0D12A735F0800727126 /* MatchWorker.swift */; };
+		223EF0D42A735F1500727126 /* MatchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0D32A735F1500727126 /* MatchRepository.swift */; };
+		223EF0D62A7360C400727126 /* ExtensionMoyaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0D52A7360C400727126 /* ExtensionMoyaResponse.swift */; };
+		223EF0DA2A73799800727126 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0D92A73799800727126 /* ExtensionDate.swift */; };
+		223EF0DC2A7379C300727126 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0DB2A7379C300727126 /* ExtensionString.swift */; };
 		22B165B12A7322AB001925E3 /* WellCSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165B02A7322AB001925E3 /* WellCSTVApp.swift */; };
-		22B165B32A7322AB001925E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165B22A7322AB001925E3 /* ContentView.swift */; };
 		22B165B52A7322AC001925E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B165B42A7322AC001925E3 /* Assets.xcassets */; };
 		22B165C22A7322AC001925E3 /* WellCSTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165C12A7322AC001925E3 /* WellCSTVTests.swift */; };
 		22B165CC2A7322AC001925E3 /* WellCSTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165CB2A7322AC001925E3 /* WellCSTVUITests.swift */; };
@@ -58,9 +76,27 @@
 		223EF0A92A73308100727126 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		223EF0AB2A7330D000727126 /* AssetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetType.swift; sourceTree = "<group>"; };
 		223EF0AD2A73311100727126 /* ExtensionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImage.swift; sourceTree = "<group>"; };
+		223EF0B12A7337EF00727126 /* MatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListView.swift; sourceTree = "<group>"; };
+		223EF0B32A7337FA00727126 /* MatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewModel.swift; sourceTree = "<group>"; };
+		223EF0B62A733B2D00727126 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		223EF0B72A733B2D00727126 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		223EF0B82A733B2D00727126 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		223EF0B92A733B2D00727126 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		223EF0BA2A733B2D00727126 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		223EF0BB2A733B2D00727126 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		223EF0C32A733B6300727126 /* TextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifier.swift; sourceTree = "<group>"; };
+		223EF0C52A733BDD00727126 /* TextType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextType.swift; sourceTree = "<group>"; };
+		223EF0C72A733DFD00727126 /* ExtensionFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFont.swift; sourceTree = "<group>"; };
+		223EF0C92A733F6600727126 /* SpaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceType.swift; sourceTree = "<group>"; };
+		223EF0CC2A73567800727126 /* ExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionView.swift; sourceTree = "<group>"; };
+		223EF0CF2A735C5C00727126 /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
+		223EF0D12A735F0800727126 /* MatchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchWorker.swift; sourceTree = "<group>"; };
+		223EF0D32A735F1500727126 /* MatchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchRepository.swift; sourceTree = "<group>"; };
+		223EF0D52A7360C400727126 /* ExtensionMoyaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionMoyaResponse.swift; sourceTree = "<group>"; };
+		223EF0D92A73799800727126 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
+		223EF0DB2A7379C300727126 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		22B165AD2A7322AB001925E3 /* WellCSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellCSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B165B02A7322AB001925E3 /* WellCSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCSTVApp.swift; sourceTree = "<group>"; };
-		22B165B22A7322AB001925E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22B165B42A7322AC001925E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B165BD2A7322AC001925E3 /* WellCSTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellCSTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B165C12A7322AC001925E3 /* WellCSTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCSTVTests.swift; sourceTree = "<group>"; };
@@ -99,6 +135,7 @@
 		220A953C2A7323DC00B5A37A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				223EF0B52A733B2D00727126 /* Fonts */,
 				223EF08D2A73248800727126 /* Icons */,
 				223EF08C2A73247000727126 /* Strings */,
 			);
@@ -108,6 +145,7 @@
 		220A953D2A7323E200B5A37A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				223EF0C22A733B5000727126 /* Modifiers */,
 				223EF0A82A73306D00727126 /* Extensions */,
 				223EF0A52A732FF500727126 /* Type */,
 			);
@@ -117,8 +155,8 @@
 		220A953E2A7323E800B5A37A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				223EF0AF2A7337DB00727126 /* Match */,
 				223EF0A22A732F8600727126 /* SplashScreen */,
-				22B165B22A7322AB001925E3 /* ContentView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -178,6 +216,7 @@
 		223EF0962A73267300727126 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				223EF0D32A735F1500727126 /* MatchRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -193,8 +232,10 @@
 		223EF0A52A732FF500727126 /* Type */ = {
 			isa = PBXGroup;
 			children = (
-				223EF0A62A732FFE00727126 /* ColorType.swift */,
 				223EF0AB2A7330D000727126 /* AssetType.swift */,
+				223EF0A62A732FFE00727126 /* ColorType.swift */,
+				223EF0C52A733BDD00727126 /* TextType.swift */,
+				223EF0C92A733F6600727126 /* SpaceType.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -203,9 +244,62 @@
 			isa = PBXGroup;
 			children = (
 				223EF0A92A73308100727126 /* ExtensionColor.swift */,
+				223EF0D92A73799800727126 /* ExtensionDate.swift */,
+				223EF0C72A733DFD00727126 /* ExtensionFont.swift */,
 				223EF0AD2A73311100727126 /* ExtensionImage.swift */,
+				223EF0D52A7360C400727126 /* ExtensionMoyaResponse.swift */,
+				223EF0DB2A7379C300727126 /* ExtensionString.swift */,
+				223EF0CC2A73567800727126 /* ExtensionView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		223EF0AF2A7337DB00727126 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0CE2A735C4F00727126 /* Models */,
+				223EF0B02A7337E300727126 /* List */,
+				223EF0D12A735F0800727126 /* MatchWorker.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		223EF0B02A7337E300727126 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0B12A7337EF00727126 /* MatchListView.swift */,
+				223EF0B32A7337FA00727126 /* MatchListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		223EF0B52A733B2D00727126 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0BB2A733B2D00727126 /* Roboto-Black.ttf */,
+				223EF0B92A733B2D00727126 /* Roboto-Bold.ttf */,
+				223EF0B62A733B2D00727126 /* Roboto-Medium.ttf */,
+				223EF0B72A733B2D00727126 /* Roboto-Light.ttf */,
+				223EF0B82A733B2D00727126 /* Roboto-Regular.ttf */,
+				223EF0BA2A733B2D00727126 /* Roboto-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		223EF0C22A733B5000727126 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0C32A733B6300727126 /* TextModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		223EF0CE2A735C4F00727126 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0CF2A735C5C00727126 /* MatchModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		22B165A42A7322AB001925E3 = {
@@ -371,10 +465,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223EF0BC2A733B2D00727126 /* Roboto-Medium.ttf in Resources */,
+				223EF0BE2A733B2D00727126 /* Roboto-Regular.ttf in Resources */,
 				223EF08B2A73243B00727126 /* Preview Assets.xcassets in Resources */,
+				223EF0BD2A733B2D00727126 /* Roboto-Light.ttf in Resources */,
 				223EF0A12A732D6400727126 /* LaunchScreen.storyboard in Resources */,
 				223EF0902A73250600727126 /* Localizable.strings in Resources */,
+				223EF0BF2A733B2D00727126 /* Roboto-Bold.ttf in Resources */,
+				223EF0C12A733B2D00727126 /* Roboto-Black.ttf in Resources */,
 				22B165B52A7322AC001925E3 /* Assets.xcassets in Resources */,
+				223EF0C02A733B2D00727126 /* Roboto-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,16 +499,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223EF0D62A7360C400727126 /* ExtensionMoyaResponse.swift in Sources */,
 				223EF0982A73268B00727126 /* APIHost.swift in Sources */,
 				223EF0A72A732FFE00727126 /* ColorType.swift in Sources */,
 				223EF0AC2A7330D000727126 /* AssetType.swift in Sources */,
+				223EF0CA2A733F6600727126 /* SpaceType.swift in Sources */,
 				223EF0AE2A73311100727126 /* ExtensionImage.swift in Sources */,
+				223EF0C82A733DFD00727126 /* ExtensionFont.swift in Sources */,
+				223EF0CD2A73567800727126 /* ExtensionView.swift in Sources */,
+				223EF0B42A7337FA00727126 /* MatchListViewModel.swift in Sources */,
+				223EF0C42A733B6300727126 /* TextModifier.swift in Sources */,
+				223EF0D22A735F0800727126 /* MatchWorker.swift in Sources */,
+				223EF0B22A7337EF00727126 /* MatchListView.swift in Sources */,
 				223EF09A2A7327B400727126 /* APIProvider.swift in Sources */,
+				223EF0C62A733BDD00727126 /* TextType.swift in Sources */,
 				223EF0AA2A73308100727126 /* ExtensionColor.swift in Sources */,
-				22B165B32A7322AB001925E3 /* ContentView.swift in Sources */,
 				223EF09C2A7327D400727126 /* APITarget.swift in Sources */,
+				223EF0DA2A73799800727126 /* ExtensionDate.swift in Sources */,
 				22B165B12A7322AB001925E3 /* WellCSTVApp.swift in Sources */,
+				223EF0DC2A7379C300727126 /* ExtensionString.swift in Sources */,
+				223EF0D02A735C5C00727126 /* MatchModel.swift in Sources */,
 				223EF0A42A732F9D00727126 /* SplashScreenView.swift in Sources */,
+				223EF0D42A735F1500727126 /* MatchRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +694,7 @@
 				DEVELOPMENT_TEAM = 9BC293Z6NF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WellCSTV/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -617,6 +730,7 @@
 				DEVELOPMENT_TEAM = 9BC293Z6NF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WellCSTV/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports-games";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

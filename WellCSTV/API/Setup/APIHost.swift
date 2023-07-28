@@ -10,7 +10,7 @@ import Foundation
 enum APIHost {
     
     static var baseURL: URL {
-        URL(string: "https://api.pandascore.co/csgo")!
+        URL(string: "https://api.pandascore.co/csgo/")!
     }
     
     // It's not safe to put it hard coded, but for test purposes it's easier being right here
