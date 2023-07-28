@@ -11,6 +11,8 @@ struct MatchListView: View {
     
     @StateObject private var viewModel = MatchListViewModel()
     
+    @State private var selectedId: Int?
+    
     // MARK: Body
     var body: some View {
         VStack(spacing: .spacer24) {
@@ -19,49 +21,7 @@ struct MatchListView: View {
                 .padding(.horizontal, .spacer24)
                 .horizontalAlignment(.leading)
             
-            List {
-                ForEach(viewModel.matches, id: \.id) { match in
-                    matchCard(match)
-                        .listRowBackground(Color.clear)
-                        .listRowSeparator(.hidden)
-                        .listRowInsets(.init(
-                            top: 0,
-                            leading: .spacer24,
-                            bottom: .spacer24,
-                            trailing: .spacer24
-                        ))
-                        .onAppear {
-                            if viewModel.matches.last?.id == match.id {
-                                viewModel.fetchMatches()
-                            }
-                        }
-                }
-                if viewModel.isLoading && !viewModel.isAtFirstPage {
-                    ProgressView()
-                        .controlSize(.large)
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, .spacer24)
-                        .listRowBackground(Color.clear)
-                        .listRowSeparator(.hidden)
-                }
-            }
-            .listStyle(.plain)
-            .scrollContentBackground(.hidden)
-            .scrollIndicators(.hidden)
-            .overlay {
-                if viewModel.isLoading && viewModel.isAtFirstPage {
-                    VStack {
-                        Spacer()
-                        
-                        ProgressView()
-                            .controlSize(.large)
-                        
-                        Spacer()
-                    }
-                    .frame(maxWidth: .infinity)
-                    .background(Color.cstvBackground)
-                }
-            }
+            matchList
         }
         .edgesIgnoringSafeArea(.bottom)
         .background(Color.cstvBackground)
@@ -72,6 +32,69 @@ struct MatchListView: View {
 }
 
 extension MatchListView {
+    
+    // MARK: Match List
+    private var matchList: some View {
+        List {
+            ForEach(viewModel.matches, id: \.id) { match in
+                matchCard(match)
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(.init(
+                        top: 0,
+                        leading: .spacer24,
+                        bottom: .spacer24,
+                        trailing: .spacer24
+                    ))
+                    .onAppear {
+                        if viewModel.matches.last?.id == match.id {
+                            viewModel.fetchMatches()
+                        }
+                    }
+                    .onTapGesture {
+                        self.selectedId = match.id
+                    }
+                    .navigationDestination(isPresented: .init(
+                        get: { selectedId == match.id }, // It will appear if this id is clicked
+                        set: { _ in selectedId = nil }) // If dismiss, reset the state
+                    ) { MatchDetailsView(match: match) }
+            }
+            if viewModel.isLoading && !viewModel.isAtFirstPage {
+                ProgressView()
+                    .controlSize(.large)
+                    .tint(.cstvText)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, .spacer24)
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+            }
+        }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
+        .scrollIndicators(.hidden)
+        .overlay {
+            if viewModel.isLoading && viewModel.isAtFirstPage {
+                VStack {
+                    Spacer()
+                    
+                    ProgressView()
+                        .controlSize(.large)
+                        .tint(.cstvText)
+                    
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity)
+                .background(Color.cstvBackground)
+            }
+        }
+        .tint(.cstvText)
+        .refreshable {
+            viewModel.refreshMatches()
+        }
+        .onAppear {
+            UIRefreshControl.appearance().tintColor = .white
+        }
+    }
     
     // MARK: Match Card
     private func matchCard(_ match: MatchModel) -> some View {
@@ -106,7 +129,7 @@ extension MatchListView {
     }
     
     // MARK: Match Card Header
-    private func matchCardHeader(_ status: MatchModel.Status?, _ date: Date?) -> some View {
+    private func matchCardHeader(_ status: MatchStatus?, _ date: Date?) -> some View {
         HStack {
             Spacer()
             
@@ -114,13 +137,13 @@ extension MatchListView {
                 .cstvText(type: .small, weight: .bold)
                 .padding(.spacer8)
                 .background(status == .running ? Color.cstvLive : Color.cstvInfo.opacity(0.2))
-                .cornerRadious(.spacer16, corners: [.bottomLeft, .topRight])
+                .cornerRadius(.spacer16, corners: [.bottomLeft, .topRight])
                 .opacity(date == nil ? 0 : 1)
         }
     }
     
     // MARK: Match Card Team
-    private func matchCardTeam(_ team: MatchModel.Team?, isFirst: Bool) -> some View {
+    private func matchCardTeam(_ team: TeamModel?, isFirst: Bool) -> some View {
         VStack(spacing: .spacer10) {
             AsyncImage(
                 url: URL(string: team?.imageUrl ?? ""),
@@ -142,10 +165,7 @@ extension MatchListView {
     }
     
     // MARK: Match Card Footer
-    private func matchCardFooter(
-        _ league: MatchModel.League?,
-        _ serie: MatchModel.Serie?
-    ) -> some View {
+    private func matchCardFooter(_ league: LeagueModel?, _ serie: SerieModel?) -> some View {
         VStack(spacing: 0) {
             Divider()
                 .overlay(Color.cstvText.opacity(0.2))
@@ -178,6 +198,8 @@ extension MatchListView {
 // MARK: Preview
 struct MatchListView_Previews: PreviewProvider {
     static var previews: some View {
-        MatchListView()
+        NavigationStack {
+            MatchListView()
+        }
     }
 }

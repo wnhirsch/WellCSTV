@@ -39,6 +39,14 @@
 		223EF0D62A7360C400727126 /* ExtensionMoyaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0D52A7360C400727126 /* ExtensionMoyaResponse.swift */; };
 		223EF0DA2A73799800727126 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0D92A73799800727126 /* ExtensionDate.swift */; };
 		223EF0DC2A7379C300727126 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0DB2A7379C300727126 /* ExtensionString.swift */; };
+		223EF0DF2A73938000727126 /* MatchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0DE2A73938000727126 /* MatchDetailsView.swift */; };
+		223EF0E12A7393C000727126 /* MatchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0E02A7393C000727126 /* MatchDetailsViewModel.swift */; };
+		223EF0E32A73A7E900727126 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0E22A73A7E900727126 /* PlayerModel.swift */; };
+		223EF0E52A73A80400727126 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0E42A73A80400727126 /* LeagueModel.swift */; };
+		223EF0E72A73A81100727126 /* SerieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0E62A73A81100727126 /* SerieModel.swift */; };
+		223EF0E92A73A81A00727126 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0E82A73A81A00727126 /* TeamModel.swift */; };
+		223EF0ED2A73A83A00727126 /* MatchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0EC2A73A83A00727126 /* MatchStatus.swift */; };
+		223EF0EF2A73A92900727126 /* PlayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0EE2A73A92900727126 /* PlayerRepository.swift */; };
 		22B165B12A7322AB001925E3 /* WellCSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165B02A7322AB001925E3 /* WellCSTVApp.swift */; };
 		22B165B52A7322AC001925E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B165B42A7322AC001925E3 /* Assets.xcassets */; };
 		22B165C22A7322AC001925E3 /* WellCSTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165C12A7322AC001925E3 /* WellCSTVTests.swift */; };
@@ -95,6 +103,14 @@
 		223EF0D52A7360C400727126 /* ExtensionMoyaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionMoyaResponse.swift; sourceTree = "<group>"; };
 		223EF0D92A73799800727126 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		223EF0DB2A7379C300727126 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
+		223EF0DE2A73938000727126 /* MatchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsView.swift; sourceTree = "<group>"; };
+		223EF0E02A7393C000727126 /* MatchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewModel.swift; sourceTree = "<group>"; };
+		223EF0E22A73A7E900727126 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		223EF0E42A73A80400727126 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
+		223EF0E62A73A81100727126 /* SerieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieModel.swift; sourceTree = "<group>"; };
+		223EF0E82A73A81A00727126 /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		223EF0EC2A73A83A00727126 /* MatchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStatus.swift; sourceTree = "<group>"; };
+		223EF0EE2A73A92900727126 /* PlayerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRepository.swift; sourceTree = "<group>"; };
 		22B165AD2A7322AB001925E3 /* WellCSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellCSTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B165B02A7322AB001925E3 /* WellCSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCSTVApp.swift; sourceTree = "<group>"; };
 		22B165B42A7322AC001925E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				223EF0D32A735F1500727126 /* MatchRepository.swift */,
+				223EF0EE2A73A92900727126 /* PlayerRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -257,6 +274,7 @@
 		223EF0AF2A7337DB00727126 /* Match */ = {
 			isa = PBXGroup;
 			children = (
+				223EF0DD2A73936E00727126 /* Details */,
 				223EF0CE2A735C4F00727126 /* Models */,
 				223EF0B02A7337E300727126 /* List */,
 				223EF0D12A735F0800727126 /* MatchWorker.swift */,
@@ -298,8 +316,22 @@
 			isa = PBXGroup;
 			children = (
 				223EF0CF2A735C5C00727126 /* MatchModel.swift */,
+				223EF0E22A73A7E900727126 /* PlayerModel.swift */,
+				223EF0E42A73A80400727126 /* LeagueModel.swift */,
+				223EF0E62A73A81100727126 /* SerieModel.swift */,
+				223EF0E82A73A81A00727126 /* TeamModel.swift */,
+				223EF0EC2A73A83A00727126 /* MatchStatus.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		223EF0DD2A73936E00727126 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				223EF0DE2A73938000727126 /* MatchDetailsView.swift */,
+				223EF0E02A7393C000727126 /* MatchDetailsViewModel.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		22B165A42A7322AB001925E3 = {
@@ -503,20 +535,28 @@
 				223EF0982A73268B00727126 /* APIHost.swift in Sources */,
 				223EF0A72A732FFE00727126 /* ColorType.swift in Sources */,
 				223EF0AC2A7330D000727126 /* AssetType.swift in Sources */,
+				223EF0EF2A73A92900727126 /* PlayerRepository.swift in Sources */,
 				223EF0CA2A733F6600727126 /* SpaceType.swift in Sources */,
+				223EF0E12A7393C000727126 /* MatchDetailsViewModel.swift in Sources */,
 				223EF0AE2A73311100727126 /* ExtensionImage.swift in Sources */,
+				223EF0DF2A73938000727126 /* MatchDetailsView.swift in Sources */,
+				223EF0ED2A73A83A00727126 /* MatchStatus.swift in Sources */,
 				223EF0C82A733DFD00727126 /* ExtensionFont.swift in Sources */,
 				223EF0CD2A73567800727126 /* ExtensionView.swift in Sources */,
+				223EF0E32A73A7E900727126 /* PlayerModel.swift in Sources */,
 				223EF0B42A7337FA00727126 /* MatchListViewModel.swift in Sources */,
+				223EF0E52A73A80400727126 /* LeagueModel.swift in Sources */,
 				223EF0C42A733B6300727126 /* TextModifier.swift in Sources */,
 				223EF0D22A735F0800727126 /* MatchWorker.swift in Sources */,
 				223EF0B22A7337EF00727126 /* MatchListView.swift in Sources */,
 				223EF09A2A7327B400727126 /* APIProvider.swift in Sources */,
 				223EF0C62A733BDD00727126 /* TextType.swift in Sources */,
+				223EF0E92A73A81A00727126 /* TeamModel.swift in Sources */,
 				223EF0AA2A73308100727126 /* ExtensionColor.swift in Sources */,
 				223EF09C2A7327D400727126 /* APITarget.swift in Sources */,
 				223EF0DA2A73799800727126 /* ExtensionDate.swift in Sources */,
 				22B165B12A7322AB001925E3 /* WellCSTVApp.swift in Sources */,
+				223EF0E72A73A81100727126 /* SerieModel.swift in Sources */,
 				223EF0DC2A7379C300727126 /* ExtensionString.swift in Sources */,
 				223EF0D02A735C5C00727126 /* MatchModel.swift in Sources */,
 				223EF0A42A732F9D00727126 /* SplashScreenView.swift in Sources */,
@@ -700,7 +740,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -736,7 +777,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -9,10 +9,34 @@ import Foundation
 
 class MatchWorker {
     
-    private let api: MatchRepository
+    private let matchAPI: MatchRepository
+    private let playerAPI: PlayerRepository
     
-    init(api: MatchRepository = .init()) {
-        self.api = api
+    init(matchAPI: MatchRepository = .init(), playerAPI: PlayerRepository = .init()) {
+        self.matchAPI = matchAPI
+        self.playerAPI = playerAPI
+    }
+    
+    func getPlayersByTeam(
+        teamId: Int,
+        success: (([PlayerModel]) -> Void)? = nil,
+        failure: (() -> Void)? = nil
+    ) {
+        playerAPI.getPlayersByTeam(teamId: teamId) { result in
+            switch result {
+            case let .success(response):
+                do {
+                    let players = try response.mapObject([PlayerModel].self)
+                    success?(players)
+                } catch let error {
+                    print(error)
+                    failure?()
+                }
+            case let .failure(error):
+                print(error)
+                failure?()
+            }
+        }
     }
     
     func getMatchesByPage(
@@ -23,7 +47,7 @@ class MatchWorker {
         success: (([MatchModel]) -> Void)? = nil,
         failure: (() -> Void)? = nil
     ) {
-        api.getMatchesByPage(
+        matchAPI.getMatchesByPage(
             fromDate: fromDate,
             toDate: toDate,
             page: page,
