@@ -11,7 +11,7 @@ import Foundation
 @MainActor
 class MatchListViewModel: ObservableObject {
     
-    private let worker = MatchWorker()
+    private let worker: MatchWorker
     
     // MARK: View Attributes
     @Published var isLoading: Bool = false
@@ -23,6 +23,11 @@ class MatchListViewModel: ObservableObject {
     // MARK: Dynamic Attributes
     var isAtFirstPage: Bool {
         page == 1
+    }
+    
+    // MARK: Init
+    init(worker: MatchWorker = .init()) {
+        self.worker = worker
     }
     
     // MARK: Methods

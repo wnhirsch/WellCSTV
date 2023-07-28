@@ -49,20 +49,13 @@
 		223EF0EF2A73A92900727126 /* PlayerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EF0EE2A73A92900727126 /* PlayerRepository.swift */; };
 		22B165B12A7322AB001925E3 /* WellCSTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165B02A7322AB001925E3 /* WellCSTVApp.swift */; };
 		22B165B52A7322AC001925E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B165B42A7322AC001925E3 /* Assets.xcassets */; };
-		22B165C22A7322AC001925E3 /* WellCSTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165C12A7322AC001925E3 /* WellCSTVTests.swift */; };
-		22B165CC2A7322AC001925E3 /* WellCSTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165CB2A7322AC001925E3 /* WellCSTVUITests.swift */; };
-		22B165CE2A7322AC001925E3 /* WellCSTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B165CD2A7322AC001925E3 /* WellCSTVUITestsLaunchTests.swift */; };
+		22D999D62A741686003670A1 /* MatchMockWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D999D52A741686003670A1 /* MatchMockWorker.swift */; };
+		22D999D82A7416B6003670A1 /* MatchListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D999D72A7416B6003670A1 /* MatchListTest.swift */; };
+		22D999DA2A7416C1003670A1 /* MatchDetailsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D999D92A7416C1003670A1 /* MatchDetailsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		22B165BE2A7322AC001925E3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22B165A52A7322AB001925E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22B165AC2A7322AB001925E3;
-			remoteInfo = WellCSTV;
-		};
-		22B165C82A7322AC001925E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22B165A52A7322AB001925E3 /* Project object */;
 			proxyType = 1;
@@ -115,10 +108,9 @@
 		22B165B02A7322AB001925E3 /* WellCSTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCSTVApp.swift; sourceTree = "<group>"; };
 		22B165B42A7322AC001925E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B165BD2A7322AC001925E3 /* WellCSTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellCSTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22B165C12A7322AC001925E3 /* WellCSTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCSTVTests.swift; sourceTree = "<group>"; };
-		22B165C72A7322AC001925E3 /* WellCSTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellCSTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22B165CB2A7322AC001925E3 /* WellCSTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCSTVUITests.swift; sourceTree = "<group>"; };
-		22B165CD2A7322AC001925E3 /* WellCSTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCSTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22D999D52A741686003670A1 /* MatchMockWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMockWorker.swift; sourceTree = "<group>"; };
+		22D999D72A7416B6003670A1 /* MatchListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListTest.swift; sourceTree = "<group>"; };
+		22D999D92A7416C1003670A1 /* MatchDetailsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetailsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,13 +124,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		22B165BA2A7322AC001925E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22B165C42A7322AC001925E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,7 +324,6 @@
 			children = (
 				22B165AF2A7322AB001925E3 /* WellCSTV */,
 				22B165C02A7322AC001925E3 /* WellCSTVTests */,
-				22B165CA2A7322AC001925E3 /* WellCSTVUITests */,
 				22B165AE2A7322AB001925E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -349,7 +333,6 @@
 			children = (
 				22B165AD2A7322AB001925E3 /* WellCSTV.app */,
 				22B165BD2A7322AC001925E3 /* WellCSTVTests.xctest */,
-				22B165C72A7322AC001925E3 /* WellCSTVUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -370,18 +353,27 @@
 		22B165C02A7322AC001925E3 /* WellCSTVTests */ = {
 			isa = PBXGroup;
 			children = (
-				22B165C12A7322AC001925E3 /* WellCSTVTests.swift */,
+				22D999D32A741660003670A1 /* Match */,
 			);
 			path = WellCSTVTests;
 			sourceTree = "<group>";
 		};
-		22B165CA2A7322AC001925E3 /* WellCSTVUITests */ = {
+		22D999D32A741660003670A1 /* Match */ = {
 			isa = PBXGroup;
 			children = (
-				22B165CB2A7322AC001925E3 /* WellCSTVUITests.swift */,
-				22B165CD2A7322AC001925E3 /* WellCSTVUITestsLaunchTests.swift */,
+				22D999D42A741671003670A1 /* ViewModel */,
+				22D999D52A741686003670A1 /* MatchMockWorker.swift */,
 			);
-			path = WellCSTVUITests;
+			path = Match;
+			sourceTree = "<group>";
+		};
+		22D999D42A741671003670A1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22D999D92A7416C1003670A1 /* MatchDetailsTest.swift */,
+				22D999D72A7416B6003670A1 /* MatchListTest.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,24 +418,6 @@
 			productReference = 22B165BD2A7322AC001925E3 /* WellCSTVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		22B165C62A7322AC001925E3 /* WellCSTVUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22B165D72A7322AC001925E3 /* Build configuration list for PBXNativeTarget "WellCSTVUITests" */;
-			buildPhases = (
-				22B165C32A7322AC001925E3 /* Sources */,
-				22B165C42A7322AC001925E3 /* Frameworks */,
-				22B165C52A7322AC001925E3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22B165C92A7322AC001925E3 /* PBXTargetDependency */,
-			);
-			name = WellCSTVUITests;
-			productName = WellCSTVUITests;
-			productReference = 22B165C72A7322AC001925E3 /* WellCSTVUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -458,10 +432,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					22B165BC2A7322AC001925E3 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = 22B165AC2A7322AB001925E3;
-					};
-					22B165C62A7322AC001925E3 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 22B165AC2A7322AB001925E3;
 					};
@@ -487,7 +457,6 @@
 			targets = (
 				22B165AC2A7322AB001925E3 /* WellCSTV */,
 				22B165BC2A7322AC001925E3 /* WellCSTVTests */,
-				22B165C62A7322AC001925E3 /* WellCSTVUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -511,13 +480,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		22B165BB2A7322AC001925E3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22B165C52A7322AC001925E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -568,16 +530,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B165C22A7322AC001925E3 /* WellCSTVTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22B165C32A7322AC001925E3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22B165CE2A7322AC001925E3 /* WellCSTVUITestsLaunchTests.swift in Sources */,
-				22B165CC2A7322AC001925E3 /* WellCSTVUITests.swift in Sources */,
+				22D999DA2A7416C1003670A1 /* MatchDetailsTest.swift in Sources */,
+				22D999D82A7416B6003670A1 /* MatchListTest.swift in Sources */,
+				22D999D62A741686003670A1 /* MatchMockWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,11 +543,6 @@
 			isa = PBXTargetDependency;
 			target = 22B165AC2A7322AB001925E3 /* WellCSTV */;
 			targetProxy = 22B165BE2A7322AC001925E3 /* PBXContainerItemProxy */;
-		};
-		22B165C92A7322AC001925E3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22B165AC2A7322AB001925E3 /* WellCSTV */;
-			targetProxy = 22B165C82A7322AC001925E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -843,50 +793,6 @@
 			};
 			name = Release;
 		};
-		22B165D82A7322AC001925E3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9BC293Z6NF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellCSTVUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = WellCSTV;
-			};
-			name = Debug;
-		};
-		22B165D92A7322AC001925E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9BC293Z6NF;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wnhirsch.WellCSTVUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TEST_TARGET_NAME = WellCSTV;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -913,15 +819,6 @@
 			buildConfigurations = (
 				22B165D52A7322AC001925E3 /* Debug */,
 				22B165D62A7322AC001925E3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22B165D72A7322AC001925E3 /* Build configuration list for PBXNativeTarget "WellCSTVUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22B165D82A7322AC001925E3 /* Debug */,
-				22B165D92A7322AC001925E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
