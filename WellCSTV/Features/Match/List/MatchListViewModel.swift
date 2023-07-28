@@ -47,10 +47,7 @@ class MatchListViewModel: ObservableObject {
         return teamName ?? placeholder
     }
     
-    func formatLeagueAndSerie(
-        _ league: MatchModel.League?,
-        _ serie: MatchModel.Serie?
-    ) -> String {
+    func formatLeagueAndSerie(_ league: LeagueModel?, _ serie: SerieModel?) -> String {
         if let leagueName = league?.name, let serieName = serie?.name {
             return "\(leagueName) + \(serieName)"
         } else if let leagueName = league?.name {
@@ -75,9 +72,17 @@ class MatchListViewModel: ObservableObject {
         
         worker.getMatchesByPage(toDate: today, page: page, success: { [weak self] matches in
             guard let self = self else { return }
-            self.matches.append(contentsOf: matches)
-            self.page += 1
+            if !matches.isEmpty {
+                self.matches.append(contentsOf: matches)
+                self.page += 1
+            }
             isLoading.toggle()
         }, failure: { })
+    }
+    
+    func refreshMatches() {
+        self.matches.removeAll()
+        self.page = 1
+        fetchMatches()
     }
 }

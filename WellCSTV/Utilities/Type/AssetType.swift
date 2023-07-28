@@ -9,4 +9,5 @@ import Foundation
 
 enum AssetType: String, CaseIterable {
     case logo = "fuze-logo"
+    case back = "ic-arrow-left"
 }
