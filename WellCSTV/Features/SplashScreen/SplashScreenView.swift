@@ -24,7 +24,7 @@ struct SplashScreenView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.cstvBackground)
         .navigationDestination(isPresented: $showMainView) {
-            ContentView()
+            MatchListView()
                 .navigationBarBackButtonHidden(true)
         }
         .onAppear {
